@@ -1,4 +1,4 @@
-function hello() {
+/*function hello() {
     return document.write("hello world!");
 }
 hello();
@@ -33,3 +33,22 @@ var person = new Person();
 document.write(person.name + "<br>");
 document.write(typeof person + "<br>");
 document.write(person.future() + "<br>");
+*/
+
+var Chinese = function() {
+    this.country = "China";
+}
+
+var People = function(height, weight, name) {
+    this.height = height;
+    this.weight = weight;
+    this.name = name;
+}
+
+Chinese.prototype = new People();
+var phodal = new Chinese("phodal", 50, 166);
+// document.write(phodal.country);
+// document.write(phodal.prototype.name);
+
+var para = document.getElementById("para");
+// para.style.color = "blue";
