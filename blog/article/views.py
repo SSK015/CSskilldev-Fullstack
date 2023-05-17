@@ -28,8 +28,3 @@ def article_list(request):
     # return HttpResponse("Hello world!")
 # Create your views here.
 
-def article_detail(request, id):
-    article = ArticlePost.objects.get(id=id)
-    context = { 'article': article}
-    return render(request, 'article/detail.html', context)
-
